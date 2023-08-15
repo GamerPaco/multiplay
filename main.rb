@@ -1,5 +1,15 @@
 printf "player name? "
 name = gets.chomp.strip 
+puts "Hello #{name}, ready to multiplay (y/n)?"
+ready = gets.chomp
+if ready == "n"
+    puts "ok then....................."
+    exit
+end
+
+if ready == "y"
+    puts "START! (P.S.: To  exit while playing in the middle of Multiplay, press Ctrl+C)"
+end
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 tables = numbers.dup
